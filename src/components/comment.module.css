@@ -1,0 +1,73 @@
+.conterComment{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.conterComment + .conterComment{
+    margin-top: 5rem;
+}
+.conterComment > button{
+    width: fit-content;
+    margin-left: 15%;
+}
+.pictureAndComment{
+    display: flex;
+    gap: 1.5rem;
+}
+.Comment{
+    background-color: var(--gray-400);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 85%;
+    padding: 1rem;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+.Comment > header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.Comment header > button:hover{
+    color: #F75A68;
+}
+.Button{
+    background: none; 
+    border: none; 
+    color: var(--gray-textHelp); 
+    cursor: pointer; 
+}
+.Button:hover{
+    color: green;
+}
+.Button > strong{
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    gap: 0.750rem;
+}
+
+.Comment footer > p{
+    text-align: left;
+    font-size: 0.750rem;
+}
+.infoComment{
+    display: flex;
+    flex-direction: column;
+    gap: 0.40rem;
+    text-align: left;
+}
+.infoComment > strong{
+    font-size: 0.785rem;
+    font-weight: bold;
+    color: var(--gray-tittle);
+}
+.infoComment > time{
+    font-size: 0.750rem;
+    color: var(--gray-textHelp);
+}
+
+
+

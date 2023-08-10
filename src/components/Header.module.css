@@ -1,0 +1,12 @@
+.headSite{
+    background-color: var(--gray-600);
+    color: var(--gray-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.2vh 0;
+    gap: 1.125rem;
+}
+.headSite > img{
+    height: 4vh;
+}

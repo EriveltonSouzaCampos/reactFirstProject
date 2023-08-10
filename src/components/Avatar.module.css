@@ -1,0 +1,16 @@
+.avatar{
+    width: calc(3rem + 12px);
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: fill;
+    border: 3px var(--gray-800) solid;
+    outline: 2px var(--grenn-300) solid;
+}
+.avatarWithoutBorder{
+    width: calc(5rem + 12px);
+    height: calc(5rem + 12px);
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: fill;
+}

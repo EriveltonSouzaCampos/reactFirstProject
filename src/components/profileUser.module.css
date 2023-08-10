@@ -1,0 +1,57 @@
+.conterProfile{
+    background-color: var(--gray-600);
+    border-radius: 10px;
+}
+
+.contentAndEdit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.imageProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.imageProfile img:nth-child(1){
+    height: calc(5rem);
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.imageProfile img:nth-child(2){
+    margin-top: -30px;
+}
+.userContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vw;
+    gap: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.buttonUser{
+    padding: 3rem 0.3rem 0.9rem 0.3rem;
+}
+
+.buttonUser a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--grenn-300);
+    text-decoration: none;
+    border: var(--grenn-300) 1px solid;
+    padding: 0.7rem;
+    border-radius: 8px;
+    gap: 0.5rem;
+}
+.buttonUser a:hover{
+    background-color: var(--grenn-300);
+    color: white;
+}
