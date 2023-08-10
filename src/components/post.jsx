@@ -1,20 +1,22 @@
 import stylePost from './Post.module.css'
-import pic_profile from '../assets/profile_picture.jpg'
 import { Comments } from './comment'
 import { Avatar } from './Avatar'
+import {format} from 'date-fns';
+import ptBr from 'date-fns/locale/pt-BR'
 
-export function Post(props){
+export function Post({author, publisehdAt}){
+    const publishedDateTime = format(publisedAt, "dd 'de' LLLL 'às' kk:mm:ss'h'", ptBr)
     return(
         <div className={stylePost.conterPosts}>
             <header className={stylePost.headerSite}>
                 <div className={stylePost.userInfo}>
                     <Avatar
                         hasBorder
-                        src={props.author.urlPhotoAvatar}
+                        src={author.urlPhotoAvatar}
                     />
                     <span>
-                        <strong>{props.author.name}</strong>
-                        <p>{props.author.role}</p>
+                        <strong>{author.name}</strong>
+                        <p>{author.role}</p>
                     </span>
                 </div>
                 <time>Publicado há 1h</time>
