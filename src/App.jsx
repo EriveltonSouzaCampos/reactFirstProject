@@ -15,7 +15,7 @@ const posts =
     },
     content: [
       { type: 'paragraph', content: 'Eae mrapaziada'},
-      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀 publishedAgo LW Return, event '},
       {type: 'link', content: '👉 jane.design/doctorcare'}
     ],
     published: new Date('2023-08-08 15:25:36'),
@@ -28,8 +28,8 @@ const posts =
       role: 'Dev React Calindra'
     },
     content: [
-      { type: 'paragraph', content: 'Eae mrapaziada'},
-      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
+      { type: 'paragraph', content: 'Eae mrapaziada 🚀'},
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. 🚀 É um projeto que fiz 🚀 no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
       {type: 'link', content: '👉 jane.design/doctorcare'}
     ],
     published: new Date('2023-08-10 12:25:00'),
@@ -39,11 +39,11 @@ const posts =
     author: {
       urlPhotoAvatar: 'https://media.licdn.com/dms/image/D4D03AQHG8EB5JWb0zw/profile-displayphoto-shrink_200_200/0/1675173272619?e=1697068800&v=beta&t=XEZrgAOBBFyK9py3iFNu6Fz1gvXAsTwF8nsZ9kVjga8',
       name: 'Fael Costa',
-      role: 'Dev Senior Calindra'
+      role: '👉 Dev Senior Calindra'
     },
     content: [
       { type: 'paragraph', content: 'Eae mrapaziada'},
-      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa.👉 É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
       {type: 'link', content: '👉 jane.design/doctorcare'}
     ],
     published: new Date('2023-07-08 15:25:36'),
@@ -57,7 +57,7 @@ const posts =
     },
     content: [
       { type: 'paragraph', content: 'Eae mrapaziada'},
-      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀 Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀 Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
       {type: 'link', content: '👉 jane.design/doctorcare'}
     ],
     published: new Date('2022-08-08 14:37:40'),
