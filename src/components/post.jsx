@@ -7,7 +7,7 @@ import ptBR from 'date-fns/locale/pt-BR'
 export function Post({author, publishedAt}){
     const publishedDateTime = 
     format
-    (publishedAt, "dd 'de' LLLL 'às' kk:mm'h'", {locale: ptBR}
+    (publishedAt, "dd 'de' LLLL 'às' kk:mm'h' 'de' yyyy", {locale: ptBR}
     )
     const publishedAgo =
     formatDistanceToNow
