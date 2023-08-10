@@ -90,9 +90,13 @@
     outline: none;
     color: white;
     border-radius: 8px;
-    padding: 1rem 1.8rem;
+    padding: 0.750rem 1.3rem;
     line-height: 1.6;
+    cursor: pointer;
     
+}
+.commentForm > div button:hover{
+    background-color: var(--grenn-100);
 }
 .buttonForm{
     visibility: hidden;
@@ -101,5 +105,8 @@
 .commentForm:focus-within .buttonForm{
     visibility: visible;
     max-height: none;
+}
+.commented{
+    margin-top: 2rem;
 }
 
