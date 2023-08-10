@@ -1,11 +1,23 @@
 import stylePost from './Post.module.css'
 import { Comments } from './comment'
 import { Avatar } from './Avatar'
-import {format} from 'date-fns';
-import ptBr from 'date-fns/locale/pt-BR'
+import {format, formatDistanceToNow} from 'date-fns';
+import ptBR from 'date-fns/locale/pt-BR'
 
-export function Post({author, publisehdAt}){
-    const publishedDateTime = format(publisedAt, "dd 'de' LLLL 'às' kk:mm:ss'h'", ptBr)
+export function Post({author, publishedAt}){
+    const publishedDateTime = 
+    format
+    (publishedAt, "dd 'de' LLLL 'às' kk:mm'h'", {locale: ptBR}
+    )
+    const publishedAgo =
+    formatDistanceToNow
+    (
+        publishedAt, 
+        {
+        locale: ptBR,
+        addSufix: true
+        }
+    )
     return(
         <div className={stylePost.conterPosts}>
             <header className={stylePost.headerSite}>
@@ -19,7 +31,9 @@ export function Post({author, publisehdAt}){
                         <p>{author.role}</p>
                     </span>
                 </div>
-                <time>Publicado há 1h</time>
+                <time title={publishedDateTime}>
+                    {publishedAgo}
+                </time>
             </header>
             <body>
                 <div className={stylePost.conterBody}>
