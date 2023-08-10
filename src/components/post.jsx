@@ -4,7 +4,7 @@ import { Avatar } from './Avatar'
 import {format, formatDistanceToNow} from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR'
 
-export function Post({author, publishedAt}){
+export function Post({author, publishedAt, content}){
     const publishedDateTime = 
     format
     (publishedAt, "dd 'de' LLLL 'às' kk:mm'h' 'de' yyyy", {locale: ptBR}
@@ -37,9 +37,15 @@ export function Post({author, publishedAt}){
             </header>
             <body>
                 <div className={stylePost.conterBody}>
-                    <p>Fala galeraa 👋</p>
-                    <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀 asd sdsadas sadjasdhask asdajkdhsa askjhasdaiiu asjdasd</p>
-                    <p>👉 <a href="#">jane.design/doctorcare</a></p>
+                    {content.map(line => {
+                        if(line.type === 'paragraph'){
+                            return(
+                                <p>{line.content}</p>
+                            )
+                        } else if (line.type === 'link'){
+                            return <p><a href=''>{line.content}</a></p>
+                        } 
+                    })}
                     <div className={stylePost.hpHashtag}>
                         <a href="#">#algoAi</a>
                         <a href="#">#algoAi</a>
